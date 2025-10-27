@@ -1,3 +1,4 @@
+
 # -*- coding: utf-8 -*-
 """
 Updated prediction.py to work with current scikit-learn
@@ -6,7 +7,7 @@ Updated prediction.py to work with current scikit-learn
 from joblib import load
 
 # Load the trained model and vectorizer
-model = load('final_model.joblib')
+model = load('final_model.sav')         # <- matches your folder
 vectorizer = load('tfidf_vectorizer.joblib')
 
 # Function to predict fake news
